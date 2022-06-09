@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width: 100%;
+    background-color: #F5F5DD;
+}
+
+.form {
+    padding: 20px 10px 25px 20px;
+}
+
+.form__login {
+    width: 100%;
+    display: flex;
+}
+
+.form__login-item {
+    width: 50%;
+}
+
+.form__title {
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input,
+select {
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+.form__login-input {
+    width: calc(100% - 10px);
+}
+
+.form__address {
+    width: 100%;
+}
+
+.form__address-input {
+    width: calc(100% - 10px);
+}
+
+.form__city {
+    display: flex;
+    width: 100%;
+}
+
+.form__city-left {
+    width: calc(50% - 10px);
+}
+
+.form__city-input {
+    width: 100%;
+}
+
+.form__city-right {
+    width: 50%;
+    padding-left: 10px;
+    display: flex;
+}
+
+.form__state {
+    width: 70%;
+}
+
+.form__state select {
+    width: calc(100% - 10px);
+    padding: 5px 10px;
+}
+
+.form__zip {
+    width: 30%;
+}
+
+.form__zip-input {
+    width: 100%;
+}
+
+.form__checkbox {
+    margin: 10px 0;
+}
+
+.form__btn {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #0079FA;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
