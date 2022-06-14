@@ -213,6 +213,7 @@ p a:hover {
     color: #333;
     transition: all 0.3s ease;
     line-height: 1.7;
+    display: block;
 }
 
 .contact-link:hover {
