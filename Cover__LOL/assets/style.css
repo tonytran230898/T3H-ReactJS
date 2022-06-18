@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto",Arial,Helvetica,"Droid Sans",sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    background-color: #101215;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.navbar-header {
+    margin: 0 64.5px;
+    position: relative;
+}
+.navbar-header-logo {
+    width: 14%;
+    display: inline-block;
+}
+
+.nav-logo img {
+    margin-top: 5px;
+}
+
+.nav-pc {
+    width: 86%;
+    height: 70px;
+    float: right;
+}
+
+.navbar-header-list {
+    width: 100%;
+    list-style: none;
+    margin-left: -30px;
+    position: relative;
+}
+
+.navbar-header-item {
+    display: inline-block;
+    width: 16.3%;
+    height: 70px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #d2b48c;
+    -webkit-background-clip: text;
+    -webkit-background-clip: linear-gradient(#fce5b9,#c19e68);
+    background-clip: text;
+    border: none;
+    transition: all 0.1s ease;
+}
+
+.nav-link:hover {
+    color: #d2b48c;
+}
+
+.navbar-header-item:first-child:hover,
+.navbar-header-item:nth-child(2):hover,
+.navbar-header-item:nth-child(5):hover {
+    transform: translateY(-1px);
+    border-bottom: 3px solid #0bc6e3;
+    line-height: 65px;
+    color: #d2b48c;
+}
+
+.pc-dropdown {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(6, 28, 37, .9);
+    list-style: none;
+    left: 0;
+    margin-top: 5px;
+    display: none;
+}
+
+.show-dropdown {
+    display: block;
+}
+
+.dropdown-container {
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    float: left;
+    display: block;
+    width: 14%;
+    margin-left: 10px;
+}
+
+.right {
+    float: left;
+    display: flex;
+    text-align: center;
+    width: 86%;
+}
+
+.pc-dropdown-item {
+    width: 16%;
+    margin-left: 5px;
+}
+
+.item-left {
+    margin-left: -10px;
+}
+
+.pc-dropdown-link {
+    margin: 7px 13px 13px;
+    font-weight: 900;
+}
+
+.pc-dropdown-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: all 0.1s ease;
+}
+
+.pc-dropdown-link a:hover {
+    color: #0bc6e3;
+}
+
+/* .navbar-header-list:first-child:hover ~.pc-dropdown,
+.navbar-header-list:nth-child(2):hover ~ .pc-dropdown {
+    display: block;
+} */
+
+/* #2c3e50
+#007aff */
