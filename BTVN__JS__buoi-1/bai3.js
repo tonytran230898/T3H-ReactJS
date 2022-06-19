@@ -12,89 +12,27 @@
 const a = 96;
 const b = 108;
 const c = 89;
-const Dolphins = (a + b + c) / 3;
-console.log(Dolphins);
+const dolphins = (a + b + c) / 3;
+console.log(dolphins);
 const d = 88;
 const e = 91;
 const f = 110;
-const Koalas = (d + e + f) / 3;
-console.log(Koalas);
+const koalas = (d + e + f) / 3;
+console.log(koalas);
 // So sánh ĐTB 2 đội xem đội nào cao điểm hơn
-if (Dolphins > Koalas) {
+if (dolphins > koalas) {
     console.log('Dolphins là đội cao điểm hơn');
-} else if (Dolphins < Koalas) {
+} else if (dolphins < koalas) {
     console.log('Koalas là đội cao điểm hơn');
-} else if (Dolphins == Koalas) {
+} else {
     console.log('2 đội bằng điểm nhau');
 }
 // So sánh ĐTB 2 đội với yêu cầu tối thiểu 100đ
-if (Dolphins > Koalas && Dolphins >= 100) {
+if (dolphins > koalas && dolphins >= 100) {
     console.log('Dolphins là đội chiến thắng');
-} else if (Dolphins < Koalas && Koalas >= 100) {
+} else if (dolphins < koalas && koalas >= 100) {
     console.log('Koalas là đội chiến thắng');
-} else if (Dolphins >= 100 && Koalas >= 100 && Dolphins == Koalas) {
-    console.log('2 đội hòa nhau');
-} else {
-    console.log('Không có đội thắng cuộc');
-}
-// + Data Bonus 1: Dolphins có điểm là  97, 112 và 101. Koalas có điểm là 109, 95 và 123
-
-// Tính ĐTB cả 2 đội
-const g = 97;
-const h = 112;
-const i = 101;
-const Dolphins1 = (g + h + i) / 3;
-console.log(Dolphins1);
-const j = 109;
-const k = 95;
-const l = 123;
-const Koalas1 = (d + e + f) / 3;
-console.log(Koalas1);
-// So sánh ĐTB 2 đội xem đội cao điểm hơn
-if (Dolphins1 > Koalas1) {
-    console.log('Dolphins1 là đội cao điểm hơn');
-} else if (Dolphins1 < Koalas1) {
-    console.log('Koalas1 là đội cao điểm hơn');
-} else if (Dolphins1 == Koalas1) {
-    console.log('2 đội bằng điểm nhau');
-}
-// So sánh ĐTB 2 đội với yêu cầu tối thiểu 100đ
-if (Dolphins1 > Koalas1 && Dolphins1 >= 100) {
-    console.log('Dolphins1 là đội chiến thắng');
-} else if (Dolphins1 < Koalas1 && Koalas1 >= 100) {
-    console.log('Koalas1 là đội chiến thắng');
-} else if (Dolphins1 >= 100 && Koalas1 >= 100 && Dolphins1 == Koalas1) {
-    console.log('2 đội hòa nhau');
-} else {
-    console.log('Không có đội thắng cuộc');
-}
-// + Data Bonus 2: Dolphins có điểm là 97, 112 và 101. Koalas có điểm là 109, 95 và 106
-
-// Tính ĐTB cả 2 đội
-const m = 97;
-const n = 112;
-const o = 101;
-const Dolphins2 = (m + n + o) / 3;
-console.log(Dolphins2);
-const p = 109;
-const q = 95;
-const r = 106;
-const Koalas2 = (p + q + r) / 3;
-console.log(Koalas2);
-// So sánh ĐTB 2 đội xem đội cao điểm hơn
-if (Dolphins2 > Koalas2) {
-    console.log('Dolphins2 là đội cao điểm hơn');
-} else if (Dolphins2 < Koalas2) {
-    console.log('Koalas2 là đội cao điểm hơn');
-} else if (Dolphins2 == Koalas2) {
-    console.log('2 đội bằng điểm nhau');
-}
-// So sánh ĐTB 2 đội với yêu cầu tối thiểu 100đ
-if (Dolphins2 > Koalas2 && Dolphins2 >= 100) {
-    console.log('Dolphins2 là đội chiến thắng');
-} else if (Dolphins2 < Koalas2 && Koalas2 >= 100) {
-    console.log('Koalas2 là đội chiến thắng');
-} else if (Dolphins2 >= 100 && Koalas2 >= 100 && Dolphins2 == Koalas2) {
+} else if (dolphins >= 100 && koalas >= 100 && dolphins == koalas) {
     console.log('2 đội hòa nhau');
 } else {
     console.log('Không có đội thắng cuộc');
