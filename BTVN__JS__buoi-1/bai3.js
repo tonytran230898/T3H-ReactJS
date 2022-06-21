@@ -9,31 +9,39 @@
 // + Data 1: Dolphins có điểm là 96, 108 và 89. Koalas có điểm là  88, 91 và 110
 
 // Tính ĐTB cả 2 đội
-const a = 96;
-const b = 108;
-const c = 89;
-const dolphins = (a + b + c) / 3;
-console.log(dolphins);
-const d = 88;
-const e = 91;
-const f = 110;
-const koalas = (d + e + f) / 3;
-console.log(koalas);
+function mediumScore(a, b, c) { // Hàm tính ĐTB
+    const dtb = (a + b + c) / 3;
+    return dtb;
+};
+const teamDophins = (mediumScore(96, 108, 89));
+    console.log(teamDophins);
+const teamKolas = (mediumScore(88, 91, 110));
+    console.log(teamKolas);
+
 // So sánh ĐTB 2 đội xem đội nào cao điểm hơn
-if (dolphins > koalas) {
-    console.log('Dolphins là đội cao điểm hơn');
-} else if (dolphins < koalas) {
-    console.log('Koalas là đội cao điểm hơn');
-} else {
-    console.log('2 đội bằng điểm nhau');
-}
-// So sánh ĐTB 2 đội với yêu cầu tối thiểu 100đ
-if (dolphins > koalas && dolphins >= 100) {
-    console.log('Dolphins là đội chiến thắng');
-} else if (dolphins < koalas && koalas >= 100) {
-    console.log('Koalas là đội chiến thắng');
-} else if (dolphins >= 100 && koalas >= 100 && dolphins == koalas) {
-    console.log('2 đội hòa nhau');
-} else {
-    console.log('Không có đội thắng cuộc');
-}
+function compare(teamDophins, teamKolas) { // Hàm so sánh ĐTB 2 đội
+    if (teamDophins > teamKolas) {
+        console.log('Dolphins là đội cao điểm hơn');
+    } else if (teamDophins < teamKolas) {
+        console.log('Koalas là đội cao điểm hơn');
+    } else {
+        console.log('2 đội bằng điểm nhau');
+    };
+};
+
+compare(teamDophins, teamKolas);
+// Tìm đội thắng cuộc
+function findTeamWin(teamDophins, teamKolas) {
+    if (teamDophins > teamKolas && teamDophins >= 100) {
+        console.log('Dolphins là đội chiến thắng');
+    } else if (teamDophins < teamKolas && teamKolas >= 100) {
+        console.log('Koalas là đội chiến thắng');
+    } else if (teamDophins >= 100 && teamKolas >= 100 && teamDophins == teamKolas) {
+        console.log('2 đội hòa nhau');
+    } else {
+        console.log('Không có đội thắng cuộc');
+    };
+    return teamDophins, teamKolas;
+};
+
+findTeamWin(teamDophins, teamKolas);

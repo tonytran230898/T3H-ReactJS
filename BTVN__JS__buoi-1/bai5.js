@@ -8,27 +8,32 @@
 // -	Output (đầu ra): Thực hiện phép tính với hai số
 // Data test:
 // + Data 1: a = 78, b = 97, op (phép tính): add => thì sẽ phải thực hiện cộng 2 số lại với nhau
-const a = 78;
-const b = 97;
-const add = a + b;
-console.log(add);
+const add = (a, b) => {
+    a + b;
+    return a + b;
+};
+console.log(add(78, 97));
 // + Data 2: a = 87, b = -99, op: subtract
-const c = 87;
-const d = -99;
-const subtract = c - d;
-console.log(subtract);
+const subtract = (a, b) => {
+    a - b;
+    return a - b;
+};
+console.log(subtract(87, -99));
 // + Data 3: a = 679, b = 5, op: multiply
-const e = 679;
-const f = 5;
-const multiply = e * f;
-console.log(multiply);
+const multiply = (a, b) => {
+    a * b;
+    return a * b;
+};
+console.log(multiply(679, 5));
 // + Data 4: a = 54, b = 3, op: divide
-const g = 54;
-const h = 3;
-const divide = g / h;
-console.log(divide);
+const divide = (a, b) => {
+    a / b;
+    return a / b;
+};
+console.log(divide(54, 3));
 // + Data 5: a = 223, b = 78, op: modulus
-const i = 223;
-const j = 78;
-const modulus = i % j;
-console.log(modulus);
+const modulus = (a, b) => {
+    a % b;
+    return a % b;
+};
+console.log(modulus(223, 78));
